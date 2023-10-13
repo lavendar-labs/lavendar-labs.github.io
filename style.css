@@ -78,16 +78,22 @@ h2 {
     align-content: space-between;
     justify-content: center;
     margin-bottom: 10%;
+    gap: 1rem;
 }
 
 .project-box {
-    width: 30%;
+    width: 25%;
     height: auto;
+    background-color: rgb(218, 218, 218);
+    padding: 0.5rem;
+    border: 0.5rem solid rgb(218, 218, 218);
+    border-radius: 0.7rem;
 }
 
 .project-icon {
     width: 80%;
     height: auto;
+    margin: auto;
 }
 
 
