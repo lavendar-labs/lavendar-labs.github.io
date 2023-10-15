@@ -23,13 +23,14 @@ html {
 .pfp {
     height: 10rem;
     width: 10rem;
-    position: sticky;
 }
+
 body {
     padding: 0px 15%;
     height: 100%;
     margin-bottom: 0;
     overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
 }
 
 #title {
@@ -48,24 +49,11 @@ body {
 #team-header {
     margin-left: 0;
     margin-right: auto;
-    animation-name: slide-right;
-    animation-duration: 3s;
+    animation-name: slide-right-title;
+    animation-duration: 1s;
 }
 
-.team-block {
-    display: flex;
-    flex-direction: flex-start;
-    width: auto;
-}
-
-.right {
-    margin-left: auto;
-    margin-right: 0;
-    animation-duration: 3s;
-    animation-name: slide-right;
-}
-
-@keyframes slide-right {
+@keyframes slide-right-title {
     0% {
         margin-right: 100%;
         width: 100%;
@@ -76,21 +64,39 @@ body {
     }
 }
 
+.team-block {
+    display: flex;
+    flex-direction: flex-start;
+    width: 75%;
+}
+
+.right {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-name: slide-right;
+}
+
+@keyframes slide-right {
+    0% {
+        margin-right: 100%;
+    }
+    100% {
+        margin-right: 0%;
+    }
+}
+
 .left {
-    margin-left: 0;
-    margin-right: auto;
-    animation-duration: 3s;
+    align-self: flex-start;
+    animation-duration: 2s;
     animation-name: slide-left;
 }
 
 @keyframes slide-left {
     0% {
         margin-left: 100%;
-        width: 100%;
     }
     100% {
         margin-left: 0%;
-        width: 100%;
     }
 }
 
