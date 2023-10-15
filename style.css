@@ -18,7 +18,6 @@ nav {
 
 html {
     scroll-behavior: smooth;
-    
 }
 
 .pfp {
@@ -30,6 +29,7 @@ body {
     padding: 0px 15%;
     height: 100%;
     margin-bottom: 0;
+    overflow-x: hidden;
 }
 
 #title {
@@ -45,32 +45,77 @@ body {
     justify-content: space-between;
 }
 
+#team-header {
+    margin-left: 0;
+    margin-right: auto;
+    animation-name: slide-right;
+    animation-duration: 3s;
+}
+
 .team-block {
     display: flex;
     flex-direction: flex-start;
     width: auto;
 }
 
-.left {
-    margin-left: 0;
-    margin-right: auto;
-}
-
 .right {
     margin-left: auto;
     margin-right: 0;
+    animation-duration: 3s;
+    animation-name: slide-right;
 }
+
+@keyframes slide-right {
+    0% {
+        margin-right: 100%;
+        width: 100%;
+    }
+    100% {
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+
+.left {
+    margin-left: 0;
+    margin-right: auto;
+    animation-duration: 3s;
+    animation-name: slide-left;
+}
+
+@keyframes slide-left {
+    0% {
+        margin-left: 100%;
+        width: 100%;
+    }
+    100% {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
 
 #about {
     margin: 10rem 0px;
     line-height: 2rem;
     font-size: 1.5rem;
+    animation-name: fade-in;
+    animation-duration: 3s;
 }
 
 h2 {
     font-size: 3rem;
 }
 
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#projects-header{
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
 
 #projects-container {
     display: flex;
@@ -79,6 +124,8 @@ h2 {
     justify-content: center;
     margin-bottom: 10%;
     gap: 1rem;
+    animation-name: fade-in;
+    animation-duration: 3s;
 }
 
 .project-box {
