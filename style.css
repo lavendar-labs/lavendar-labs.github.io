@@ -25,6 +25,8 @@ html {
 .pfp {
     height: 10rem;
     width: 10rem;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 body {
@@ -171,6 +173,7 @@ h2 {
     background-color: #442b63;
     margin-bottom: 0;
     padding: 1rem;
+    color: white
 }
 
 .emerge{
