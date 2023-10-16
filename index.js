@@ -10,6 +10,9 @@ const observer = new IntersectionObserver(entries => {
                 case entryClassList.contains('right'):
                     entryClassList.add('slide-right');
                     break;
+                case entryClassList.contains('project-box'):
+                    entryClassList.add('emerge');
+                    break;
                 case entry.target.getAttribute('id', 'team-header') == 'team-header':
                     entryClassList.add('slide-right-title');
                     break;
@@ -21,7 +24,7 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 // Add elements to what you want to be animated
-const animElems = document.querySelectorAll('.team-block, #team-header');
+const animElems = document.querySelectorAll('.team-block, #team-header, .project-box');
 
 // Loop over the elements and add each one to the observer
 animElems.forEach((element) => observer.observe(element));

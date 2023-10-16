@@ -168,3 +168,17 @@ h2 {
     margin-bottom: 0;
     padding: 1rem;
 }
+
+.emerge{
+    animation-name: emerge;
+    animation-duration: 1s;
+}
+
+@keyframes emerge {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
