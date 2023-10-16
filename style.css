@@ -78,6 +78,7 @@ body {
     flex-direction: flex-start;
     width: 75%;
     animation-timing-function: ease-out;
+    align-items: center;
 }
 
 .right {
@@ -86,7 +87,7 @@ body {
 }
 
 .slide-right{
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: slide-right;
 }
 
@@ -105,7 +106,7 @@ body {
 }
 
 .slide-left{
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: slide-left;
 }
 
@@ -154,18 +155,27 @@ h2 {
 }
 
 .project-box {
-    width: 25%;
+    width: 15rem;
     height: auto;
     background-color: rgb(218, 218, 218);
     padding: 0.5rem;
     border: 0.5rem solid rgb(218, 218, 218);
     border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
 }
 
 .project-icon {
-    width: 80%;
-    height: auto;
-    margin: auto;
+    width: 12rem;
+    height: 12rem;
+    object-fit: contain;
+    align-self: center;
+    margin-top: 10%;
+}
+
+.project-title {
+    margin-bottom: 0;
 }
 
 
