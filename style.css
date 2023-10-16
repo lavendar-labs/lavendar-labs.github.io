@@ -49,8 +49,12 @@ body {
 #team-header {
     margin-left: 0;
     margin-right: auto;
+}
+
+.slide-right-title{
     animation-name: slide-right-title;
     animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 @keyframes slide-right-title {
@@ -66,18 +70,21 @@ body {
 
 .team-block {
     display: flex;
+    flex-direction: flex-start;
     width: 75%;
+    animation-timing-function: ease-out;
 }
 
 .right {
     align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.slide-right{
     animation-duration: 2s;
     animation-name: slide-right;
 }
 
-.team-block.right {
-    flex-direction: row-reverse;
-}
 
 @keyframes slide-right {
     0% {
@@ -90,6 +97,9 @@ body {
 
 .left {
     align-self: flex-start;
+}
+
+.slide-left{
     animation-duration: 2s;
     animation-name: slide-left;
 }
