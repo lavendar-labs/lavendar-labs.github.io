@@ -4,6 +4,9 @@ const observer = new IntersectionObserver(entries => {
         const entryClassList = entry.target.classList;
         if (entry.isIntersecting) {
             switch(true){
+                case entryClassList.contains('fade-in'):
+                    entryClassList.add('fade-in-activate');
+                    break;
                 case entryClassList.contains('left'):
                     entryClassList.add('slide-left');
                     break;
@@ -24,7 +27,7 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 // Add elements to what you want to be animated
-const animElems = document.querySelectorAll('.team-block, #team-header, .project-box');
+const animElems = document.querySelectorAll('.team-block, #team-header, .project-box, .fade-in');
 
 // Loop over the elements and add each one to the observer
 animElems.forEach((element) => observer.observe(element));

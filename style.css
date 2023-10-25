@@ -18,6 +18,11 @@ nav {
     text-decoration: none;
 }
 
+#main-container {
+    width: 60rem;
+    margin: auto;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -25,7 +30,6 @@ html {
 .pfp {
     height: 10rem;
     width: 10rem;
-    padding-left: 1em;
     padding-right: 1em;
 }
 
@@ -55,6 +59,7 @@ body {
     margin-right: auto;
     margin-top: 1em;
 }
+
 
 .slide-right-title{
     animation-name: slide-right-title;
@@ -135,6 +140,18 @@ h2 {
 @keyframes fade-in {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+.fade-in-activate {
+    animation-duration: 2s;
+    animation-name: fade-in;
+}
+
+#group-photo {
+    object-fit: contain;
+    height: auto;
+    width: 60rem;
+    margin-bottom: 1rem;
 }
 
 #projects-header{
