@@ -18,6 +18,10 @@ nav {
     text-decoration: none;
 }
 
+p {
+    font-weight: 300;
+}
+
 #main-container {
     width: 60rem;
     margin: auto;
@@ -54,6 +58,14 @@ body {
     justify-content: space-between;
 }
 
+div#team > div.fade-in > p {
+    margin: auto;
+    margin-top: 0;
+    width: auto;
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+
 #team-header {
     margin-left: 0;
     margin-right: auto;
@@ -84,6 +96,7 @@ body {
     width: 75%;
     animation-timing-function: ease-out;
     align-items: center;
+    opacity: 0;
 }
 
 .right {
@@ -94,6 +107,7 @@ body {
 .slide-right{
     animation-duration: 1s;
     animation-name: slide-right;
+    opacity: 1;
 }
 
 
@@ -113,6 +127,7 @@ body {
 .slide-left{
     animation-duration: 1s;
     animation-name: slide-left;
+    opacity: 1;
 }
 
 @keyframes slide-left {
@@ -142,16 +157,21 @@ h2 {
     100% { opacity: 1; }
 }
 
+/* the order of fade-in and activate is important */
+.fade-in {
+    opacity: 0;
+}
+
 .fade-in-activate {
     animation-duration: 2s;
     animation-name: fade-in;
+    opacity: 1;
 }
 
 #group-photo {
     object-fit: contain;
     height: auto;
     width: 60rem;
-    margin-bottom: 1rem;
 }
 
 #projects-header{
@@ -181,6 +201,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+    opacity: 0;
 }
 
 .project-icon {
@@ -206,6 +227,7 @@ h2 {
 .emerge{
     animation-name: emerge;
     animation-duration: 1s;
+    opacity: 1;
 }
 
 @keyframes emerge {
