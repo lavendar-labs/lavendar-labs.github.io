@@ -22,7 +22,7 @@ const observerFull = new IntersectionObserver(entries => {
 }, {
     root: null, // Use the viewport as the root
     rootMargin: '0px', // No margin
-    threshold: 1.0, // Trigger when 100% of the element is in view
+    threshold: 0.8, // Trigger when 100% of the element is in view
 });
 
 
