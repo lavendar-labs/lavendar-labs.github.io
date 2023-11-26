@@ -31,9 +31,9 @@ html {
 }
 
 .pfp {
-    height: 10rem;
-    width: 10rem;
-    padding-right: 1em;
+    height: 12rem;
+    width: 12rem;
+    margin: 1em;
 }
 
 body {
@@ -74,6 +74,7 @@ div#team > div.fade-in > p {
     margin-left: 0;
     margin-right: auto;
     margin-top: 1em;
+    opacity: 0;
 }
 
 
@@ -81,6 +82,7 @@ div#team > div.fade-in > p {
     animation-name: slide-right-title;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    opacity: 1 !important;
 }
 
 @keyframes slide-right-title {
@@ -224,8 +226,9 @@ h2 {
 #contact {
     background-color: #442b63;
     margin-bottom: 0;
-    padding: 1rem;
-    color: white
+    padding: 1rem 3rem;
+    color: white;
+    margin-top: 3rem;
 }
 
 .emerge{
@@ -241,4 +244,13 @@ h2 {
 	50% {
 		transform: scale(1, .025);
 	}
+}
+
+#contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-weight: 500;
 }
