@@ -1,6 +1,4 @@
 nav {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     display: flex;
     flex-direction: row;
@@ -12,7 +10,7 @@ nav {
 }
 
 .nav-button {
-    color: #a27eab;
+    color: #321f49;
     font-size: 1.2rem;
     text-decoration: none;
 }
@@ -47,13 +45,19 @@ body {
 
 #title {
     display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 #title > h1 {
     font-size: 5rem;
-    margin-bottom: 1rem;
     color: #442b63
 }
+
+#title > img {
+    object-fit: contain;
+}
+
 
 #team {
     display: flex;
@@ -154,6 +158,10 @@ div#team > div.fade-in > p {
     animation-duration: 3s;
 }
 
+.lavender-bold {
+    color: #442b63;
+}
+
 h2 {
     font-size: 3rem;
 }
@@ -200,9 +208,9 @@ h2 {
 .project-box {
     width: 15rem;
     height: auto;
-    background-color: rgb(218, 218, 218);
+    background-color: rgba(218, 218, 218, 0.75);
     padding: 0.5rem;
-    border: 0.5rem solid rgb(218, 218, 218);
+    border: 0.5rem solid rgba(218, 218, 218, 0.75);
     border-radius: 0.7rem;
     display: flex;
     flex-direction: column;
@@ -224,10 +232,10 @@ h2 {
 
 
 #contact {
-    background-color: #442b63;
+    background-color: #ffebc93d;
     margin-bottom: 0;
     padding: 1rem 3rem;
-    color: white;
+    color: #442b63;
     margin-top: 3rem;
 }
 
